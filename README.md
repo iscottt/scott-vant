@@ -1,7 +1,9 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- vite（vue3 官方推荐的打包工具）
+- pnpm（新的包管理）
+- typescript
+- windi css （原子化 css）
+- pinia (更小更快的状态管理插件)
+- unplugin-vue-components (自动导入 UI 组件)
+- vite-plugin-style-import （解决类似 message,doalog 等组件样式丢失）
