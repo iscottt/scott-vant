@@ -27,17 +27,16 @@
 import { ref } from 'vue';
 import OrderItem from '@/components/orderItem/index.vue';
 const value1 = ref(0);
-const value2 = ref('0');
+const value2 = ref('a');
 const option1 = [
-  { text: '工单类别', value: 0 },
-  { text: '手工单', value: 1 },
-  { text: '智能单', value: 1 },
+  { text: '全部商品', value: 0 },
+  { text: '新款商品', value: 1 },
+  { text: '活动商品', value: 2 },
 ];
 const option2 = [
-  { text: '工单级别', value: '0' },
-  { text: '高', value: 'a' },
-  { text: '中', value: 'b' },
-  { text: '低', value: 'c' },
+  { text: '默认排序', value: 'a' },
+  { text: '好评排序', value: 'b' },
+  { text: '销量排序', value: 'c' },
 ];
 const list = ref<any>([]);
 const loading = ref(false);

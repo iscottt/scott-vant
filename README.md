@@ -8,3 +8,4 @@
 - pinia (更小更快的状态管理插件)
 - unplugin-vue-components (自动导入 UI 组件)
 - vite-plugin-style-import （解决类似 message,doalog 等组件样式丢失）
+- postcss-px-to-viewport （移动端viewport适配 ）

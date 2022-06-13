@@ -1,20 +1,33 @@
 <template>
   <router-view v-slot="{ Component }">
-    <transition name="fade">
+    <transition name="fade-slide" mode="out-in" appear>
       <component :is="Component" />
     </transition>
   </router-view>
 </template>
 
 <style lang="less">
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 1s ease;
+/* fade-slide */
+.fade-slide-leave-active,
+.fade-slide-enter-active {
+  transition: all 0.3s;
 }
-.fade-enter-from,
-.fade-leave-to {
+.fade-slide-enter-from {
   opacity: 0;
+  transform: translateX(-30px);
 }
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #f7f8fa;
+  padding: 1px 10px;
+  box-sizing: border-box;
+}
+
 .scott-tag-title {
   margin: 0;
   a {
